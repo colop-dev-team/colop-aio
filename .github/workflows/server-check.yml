@@ -1,7 +1,11 @@
-name: prepare publish check
+name: server check
 
 on:
   pull_request:
+    branches:
+      - develop
+      - main
+  push:
     branches:
       - develop
       - main
