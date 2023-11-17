@@ -38,6 +38,7 @@ jobs:
           node-version: '18.x'
       - name: install packages
         run: yarn
+        working-directory: web-app
       - name: Cache node modules
         uses: actions/cache@v3
         id: cache-node-modules
@@ -63,6 +64,7 @@ jobs:
           key: ${{ github.sha }}
       - name: check format
         run: yarn check-format
+        working-directory: web-app
   
   check-lint:
     runs-on: ubuntu-latest
@@ -82,6 +84,7 @@ jobs:
           key: ${{ github.sha }}
       - name: check lint
         run: yarn check-lint
+        working-directory: web-app
   
   check-types:
     runs-on: ubuntu-latest
@@ -101,6 +104,7 @@ jobs:
           key: ${{ github.sha }}
       - name: check types
         run: yarn check-types
+        working-directory: web-app
 
   check-build:
     runs-on: ubuntu-latest
@@ -120,3 +124,4 @@ jobs:
           key: ${{ github.sha }}
       - name: check build next
         run: yarn build
+        working-directory: web-app
