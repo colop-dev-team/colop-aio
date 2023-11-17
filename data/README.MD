@@ -1,0 +1,1 @@
+Config for database of Colop AIO
