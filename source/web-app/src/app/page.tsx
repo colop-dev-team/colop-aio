@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import { Typography } from '@colop/colop-material'
 import { TestComponent } from '../../modules/test'
 
 export default function Home() {

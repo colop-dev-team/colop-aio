@@ -3,5 +3,5 @@
 import { Typography } from '@colop/colop-material'
 
 export const TestComponent = () => {
-  return <Typography text={'ok'} />
+  return <Typography text="ok" />
 }

@@ -1,0 +1,29 @@
+{
+  "name": "colop-aio",
+  "version": "1.0.0",
+  "description": "All in one ERP & CRM app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "cd .. && husky install source/web-app/.husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colop-dev-team/colop-aio.git"
+  },
+  "keywords": [
+    "AIO",
+    "SASS",
+    "Task",
+    "management"
+  ],
+  "author": "Colop development team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colop-dev-team/colop-aio/issues"
+  },
+  "homepage": "https://github.com/colop-dev-team/colop-aio#readme",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}
